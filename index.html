@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="index.css">
+
+    <title>portfolio website</title>
+</head>
+<body>
+   
+    <header class="header">
+        <img class="logo" src="images/th.jpeg">
+         <!--menu icon should set here-->
+        <!--nav bar goees here-->
+      <div class="toogle" onclick="myfunction()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+        
+        <nav id="navbar" >
+            <ul>
+                <li><a href="#home" >home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li> <a href="#education" class="contact">contact</a> </li>
+                <li><a href="#issue">feedback</a></li>
+          </ul>
+           
+    </nav>
+       <!-- <nav class="navbar" id="list" >
+             <a href="#home" >home</a>
+             <a href="#about">about</a>
+             <a href="#education">studies</a>
+             <a href="#contact" class="contact">contact</a> 
+             <a href="#issue">feedback</a>
+            <a href="#" class="close"><i class='bx bx-x bx-flip-horizontal'></i></a> -->
+    </header>
+   <section class="home" id="home">
+     <div class="content">
+       <h3>hello it's me </h3>
+        <h1> nani goud </h1>
+        <h3> And i am  a <span> front developer </span> </h3>
+        <p>This is the home section of my protfolio website. Here, you can find information about me </br>recent updates, and more.</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a> 
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <a href="#" class="btn">downlode cv</a>
+    </div>
+      
+     <div class="img">
+        <img src="images/nani.jpg.jpg" class="image">
+     </div>
+   </section>
+             <!--and about section goes here-->
+             <section class="about" id="about">
+    <header class="write"> <h1>about  <span>me...</span> </h1></header>
+       <div class="about-photo">
+            <img src="images/nani.2.jpg" class="img">
+        </div>
+        <div class="about-head">
+           
+       <h2>hi am nani goud</h2>
+       <p> Passionate about the intersection of technology and user experience, my focus within the vast landscape of B.Tech studies lies in frontend development. I am deeply intrigued by the art of crafting seamless and visually appealing user interfaces that enhance the overall digital experience. Proficient in Java, a language that serves as the backbone of many web applications, I find joy in harnessing its power to build dynamic and responsive websites. My academic journey is not just a quest for a degree but a deliberate pursuit to master the intricacies of frontend development, where I can leverage my skills in Java to create innovative and user-friendly solutions. With a keen eye for design and a knack for coding, I am enthusiastic about contributing to the dynamic and ever-evolving world of frontend development.</p>
+        </div>
+
+
+ </section>
+             <!--education detalis goes here-->
+        <section class="education" id="education">
+            <h1 class="heading">studies <span>details</span> </h1>
+        <div class="container">
+            <div class="box" id="box">
+              <a href="#" class="pen"><i class='bx bx-pencil' ></i></a>
+             <h1>name : <span>st. alphonsa school</span></h1>
+                <h1>score: <span> 100%</span></h1>
+                <a href="#" class="btn">downlode marks memo</a> 
+            </div>
+            <div class="box">
+                <a href="#" class="study"><i class='bx bx-book-open'></i></a>
+                <h1>name : <span>narayana jr collage</span></h1>
+                <h1>score: <span> 91.7%</span></h1>
+                <a href="#" class="btn">downlode marks memo </a>
+            </div>
+            <div class="box">
+                <a href="#" class="study"><i class='bx bxs-graduation' ></i></a>
+                <h1>name : <span>siddhartha engineering collage</span></h1>
+                <h1>score: <span> -</span></h1>
+                <a href="#" class="btn">downlode marks memo</a>
+            </div>
+        </div>
+        </section>
+
+
+        <!--contact section goes here-->
+<section id="issue">
+        <div class="con">
+            <h1>feedback<span> me</span></h1>
+        </div>
+        <form action="#">
+            <div class="form">
+                <input type="text" placeholder="ENTER YOUR NAME"> </br>
+                <input type="email" placeholder="ENTER YOUR MAIL"> </br>
+                <textarea  cols="30" rows="10">ENTER YOUR TEXT</textarea>
+            </br> <input type="button" value="submit" class="btnn">
+            </div>
+        </form>
+
+
+</section>
+<footer>
+    <h1>
+        this is my first protfolio website mention your responce by smile</h1>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a> 
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+
+</footer>
+</body>
+<script >
+    function myfunction(){
+        let nav = document.getElementById("navbar");
+  nav.classList.toggle("show")
+    }
+ 
+
+</script>
+</html>
