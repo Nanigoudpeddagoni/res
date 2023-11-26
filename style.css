@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    scroll-behavior: smooth;
+
+
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+  /* header ones goes here */
+.header{
+    position: fixed;
+    top: 0px;
+    left:0;
+    width: 100%;
+    height: 10%;
+    padding: 2.0rem 9%;
+    background-color: var(--bg-color);
+    display:  inline-block;
+   
+    z-index: 100;
+}
+section{
+    min-height:100vh ;
+    padding: 1prem 9% 2rem;
+}
+.logo{
+    mix-blend-mode:lighten;
+    height: 10rem;
+    float:left;
+    position: absolute;
+    top:20%;
+    height: 80%;
+
+}
+nav {
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding: 20px 35px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    color : white;
+    text-transform: capitalize;
+    width:100%;
+   padding: 1rem 1rem;
+   transition: 2s;
+   margin-bottom: 20px;
+}
+.contact{
+    background-color: var(--main-color);
+}
+nav ul li a:hover{
+    background-color: var(--main-color);
+}
+/* menu button goes here */
+.toogle{
+    width: 35px;
+    position: absolute;
+    right: 20px;
+    left:80%;
+    display: none;
+    cursor: pointer;
+}
+  .toogle span{
+    display: inline-block;
+    width:100%;
+    height: 2px;
+    background-color: azure;
+    float:right;
+    margin-bottom:10px ;
+    z-index: 100;
+  }
+
+.home{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-transform: capitalize;
+}
+.content{
+    position: relative;
+    top: 60px;
+}
+.content h3{
+font-size: 3.2rem;
+font-weight: 900;
+}
+.content h1{
+    font-size: 5.6rem;
+    line-height: 1.3;
+    font-weight: 900;
+}
+ .content p{
+    font-size: 1.6rem;
+    margin: 2rem 1rem;
+ }
+ span{
+    color: var(--main-color);
+    font-size: 5rem;
+ }
+ .social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width : 4rem;
+    height: 4rem;
+    border: .2rem solid var(--main-color);
+    border-radius: 30px;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    font-size:2rem ;
+ }
+ .social a:hover{
+    background-color: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+ }
+ .btn{
+    background-color: var(--main-color);
+    padding: 1rem 2.8rem;
+    display: inline-block;
+    border-radius: 20px;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight:900 ;
+    box-shadow: 0 0 1rem var(--main-color);
+ }
+ .img{
+     height: 30rem;
+     width: 30rem;
+ }
+ .img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5rem var(--main-color);
+ }  
+     /* edauction details goes here */
+ .education{
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+ }
+
+.heading{
+    position: absolute;
+    top:20%;
+    text-transform: uppercase;
+    left : 36%;
+}
+.heading ,h1{
+    font-size: 4rem;
+    text-transform:uppercase;
+}
+.heading span{
+    font-size: 5rem;
+}
+.container{ 
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.box{
+ padding: 3rem 4% 3rem;
+ border-radius: 40px;
+background-color: var(--second-bg-color);
+display: flex;
+ flex-direction: column;
+ align-items: center; 
+ position: relative;
+ top: 10rem; 
+ box-shadow: inset 0 0 1rem var(--main-color);
+ margin: 0px 35px;
+}
+.box , h1{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.box,span{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.box ,.pen{
+    padding: 2rem;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    color:white;
+}
+.box,.study{
+    padding: 2rem;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    color:white;
+}
+.box ,.btn{
+    font-size: 2rem;
+    margin:2rem 0;
+    transition: 1s;
+}
+.box:hover{
+   box-shadow: none;
+   
+    padding: 3.5rem;
+}
+.btn:hover{
+    color:black;
+    box-shadow: none;
+    background-color: white;
+}
+    /* about section goes here */
+#about{
+   
+    background-color:#323946;
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    position: relative;
+    gap: 70px;
+}
+.about-photo  .img{
+    border-radius: 50%;
+    box-shadow: 0 0 5rem var(--main-color);
+}
+ .write{
+     position: absolute;
+    top: 20%;
+    left: 45%;
+    font-size: 3rem;
+    width:100%;
+    height:3rem;
+   
+}
+.write h1{
+    font-size: 4rem;
+    font-weight: 900;
+}
+.write span{
+    font-size: 5rem;
+    font-weight: 900;
+}
+.about-head h2{
+color: var(--main-color);
+font-size:4rem ;
+}
+.about-head{
+    text-transform: capitalize;
+    line-height: 1;
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    top:50%;
+    left:30%;
+    gap: 14px;
+    font-size: 1.5rem;
+}
+/* the feedback content is goes on here */
+#issue{
+    background-color: var(--second-bg-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    gap:30px;
+    position: relative;
+}
+.con{
+    position: absolute;
+    top:20%;
+    left: 40%;
+    font-size: 4rem;
+}
+.con h1{
+    font-size: 4rem;
+}
+.con span{
+    font-size: 4rem;
+}
+form{
+    
+    position: absolute;
+    top: 40%;
+    left:25%;
+    
+
+}
+input{
+width:80rem;
+outline:none;
+padding: 10px 0;
+font-size: 18px;
+border-radius: 20px;
+margin: 5px 5px;
+background-color: var(--bg-color);
+box-shadow: 0 0 .5rem var(--main-color);
+color : var(--main-color);
+text-align: center;
+}
+textarea{
+    width:80rem;
+    max-height: 40rem;
+    outline: none;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    padding: 5px;
+    box-shadow: 0 0 .5rem var(--main-color);
+   color : var(--main-color);
+   text-align: center;
+   text-transform: capitalize;
+}
+.btnn{
+    background-color: var(--main-color);
+    text-transform: uppercase;
+    color: var(--second-bg-color);
+    font-weight: 900;
+}
+footer{
+    height: 20rem;
+    background-color: var(--bg-color);
+    color : #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+footer h1{
+    font-size: 2rem;
+    text-transform: capitalize;
+
+}
+        /* menu bar   */
+       .menu{
+          
+            font-size: 5rem;
+            color : white;
+            margin: 1px 1rem;
+            display: none;
+          
+        }
+        
