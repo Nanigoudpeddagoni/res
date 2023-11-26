@@ -1,0 +1,203 @@
+@media (min-width:300px)and (max-width:500px) {
+    
+    section{
+        overflow: hidden;
+    }
+
+   
+    .logo{
+        position: absolute;
+        top:1px;
+        height: 8rem;
+    }
+   nav{
+    display:none;
+    width:100%;
+    padding:4rem 14rem;
+    background-color:#1f242d;
+    opacity: .8;
+    text-align: center;
+   }
+   nav ul li{
+    padding: 15px 0px ;
+    width:100%;
+   }
+   nav.show{
+    display:block;
+    
+    width:400px;
+    position: absolute;
+    left:2px;
+    top:80px;
+   }
+   .toogle{
+    display: block;
+   }
+
+   .header{
+        height: 8rem;
+       
+    }  
+   .home{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top:6rem;
+   }
+.content{
+    position: relative;
+    top:-5px;
+}
+.content h3{
+   text-align: center;
+   font-size: 2rem;
+}
+.content h1{
+   font-size: 3.5rem ;
+   text-align: center;
+}
+.content p{
+    text-align: center;
+}
+.social{
+    text-align: center;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+.about{
+    display: flex;
+   
+    margin-top:6rem;
+}
+.write{
+   position:absolute;
+   font-size: 2rem;
+   left:30%;
+   top:10%;
+   width:100%;
+   display: flex;
+   flex-direction: column-reverse;   
+}
+.write h1{
+    font-size: 3rem;
+  
+}
+.write span{
+    font-size: 3.5rem;
+}
+ .about-photo .img{
+position : absolute;
+top:20%;
+left:25%;
+height:200px;
+width:200px;
+}
+.about-head p{
+  position:absolute;
+  height: 100%;
+  top:20%;
+  right:35%;
+  font-size:1.6rem ;
+  width:90%;
+
+}
+.about-head h2  {
+    font-size: 3rem;
+    position : absolute;
+    top : 5%;
+    left:-10%;
+
+}
+
+/* conatiner box wich holds box */
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: 30%;
+    width:100%;
+}
+.box{
+    padding: 2rem 2rem;
+    margin: 0 2rem;
+    position :relative;
+    top:10%;
+   
+}
+.box:hover{
+    box-shadow: none;
+    
+     padding: 3rem;
+ }
+  a.study ,a.pen{
+    margin-bottom: 1rem;
+ }
+ a.btn{
+    margin-bottom:20px;
+    font-size: 1rem;
+   
+ }
+ .education{
+    display: flex;
+    justify-content: center;
+   height: 1000px;
+ }
+ .heading{
+    position: absolute;
+    top:1%;
+    text-transform: uppercase;
+    left : 36%;
+    font-size: 3rem;
+}
+.heading span{
+    font-size: 3rem;
+}
+/* the feedback content sention goes here */
+.con{
+position: absolute;
+top:10%;
+left:20%;
+}
+.con h1 {
+    font-size: 3rem;
+}
+.con span{
+    font-size: 3rem;
+}
+form{
+    position : absolute;
+    left:1%;
+    top:30%;
+    height:600px;
+}
+input{
+    width:40rem;
+    font-size: 1rem;
+    padding: 2rem;
+    transition: 2s;
+}
+textarea{
+    width: 40rem;
+    max-height:50rem ;
+}
+input:hover{
+    box-shadow: none;
+}
+
+}
+/* the section we are using the laptops  */
+@media (min-width:500px)and (max-width:1000px) {
+    .about-head p{
+        position:absolute;
+        height: 100%;
+        top:20%;
+        right:35%;
+        font-size:1.6rem ;
+        width:90%;
+      
+      }
+
+    
+}
