@@ -25,7 +25,7 @@
    }
    nav.show{
     display:block;
-    left:-3%;
+    left:-35px;
     width:500px;
     position: absolute;
     top:80px;
