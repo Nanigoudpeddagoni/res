@@ -9,7 +9,7 @@
 
     <title>portfolio website</title>
 </head>
-<body>
+<body onload="loading()">
    
     <header class="header">
         <img class="logo" src="th.jpeg">
@@ -128,6 +128,9 @@
 </footer>
 </body>
 <script >
+    function loading(){
+        alert("welcome to my portfolio website");
+    }
     function myfunction(){
         let nav = document.getElementById("navbar");
   nav.classList.toggle("show")
