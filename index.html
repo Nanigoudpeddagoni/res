@@ -12,7 +12,7 @@
 <body>
    
     <header class="header">
-        <img class="logo" src="th.jpeg">
+        <img class="logo" src="images/th.jpeg">
          <!--menu icon should set here-->
         <!--nav bar goees here-->
       <div class="toogle" onclick="myfunction()">
@@ -51,18 +51,18 @@
             <a href="#"><i class='bx bxl-instagram' ></i></a> 
             <a href="#"><i class='bx bxl-twitter' ></i></a>
         </div>
-        <a href="#" class="btn">downlode cv</a>
+        <a href="#" class="btn"  onclick="submit()">download cv</a>
     </div>
       
      <div class="img">
-        <img src="nani.jpg.jpg" class="image">
+        <img src="images/nani.jpg.jpg" class="image">
      </div>
    </section>
              <!--and about section goes here-->
              <section class="about" id="about">
     <header class="write"> <h1>about  <span>me...</span> </h1></header>
        <div class="about-photo">
-            <img src="nani.2.jpg" class="img">
+            <img src="images/nani.2.jpg" class="img">
         </div>
         <div class="about-head">
            
@@ -80,19 +80,19 @@
               <a href="#" class="pen"><i class='bx bx-pencil' ></i></a>
              <h1>name : <span>st. alphonsa school</span></h1>
                 <h1>score: <span> 100%</span></h1>
-                <a href="#" class="btn">downlode marks memo</a> 
+                <a href="#"  onclick="submit()"class="btn">downlode marks memo</a> 
             </div>
             <div class="box">
                 <a href="#" class="study"><i class='bx bx-book-open'></i></a>
                 <h1>name : <span>narayana jr collage</span></h1>
                 <h1>score: <span> 91.7%</span></h1>
-                <a href="#" class="btn">downlode marks memo </a>
+                <a href="#" onclick="submit()" class="btn">downlode marks memo </a>
             </div>
             <div class="box">
                 <a href="#" class="study"><i class='bx bxs-graduation' ></i></a>
                 <h1>name : <span>siddhartha engineering collage</span></h1>
                 <h1>score: <span> -</span></h1>
-                <a href="#" class="btn">downlode marks memo</a>
+                <a href="#"  onclick="submit()" class="btn">downlode marks memo</a>
             </div>
         </div>
         </section>
@@ -105,10 +105,11 @@
         </div>
         <form action="#">
             <div class="form">
-                <input type="text" placeholder="ENTER YOUR NAME"> </br>
-                <input type="email" placeholder="ENTER YOUR MAIL"> </br>
+                <input type="text" id="inputtext" placeholder="ENTER YOUR NAME"> </br>
+                <input type="email" id="inputbox"placeholder="ENTER YOUR MAIL"> </br>
                 <textarea  cols="30" rows="10">ENTER YOUR TEXT</textarea>
-            </br> <input type="button" value="submit" class="btnn">
+            </br> 
+            <input type="button" value="submit" onclick="send()">
             </div>
         </form>
 
@@ -131,7 +132,28 @@
         let nav = document.getElementById("navbar");
   nav.classList.toggle("show")
     }
- 
+   
+//    btn.addEventListener("click",()=>{
+//       alert("your responce had caught me");
+//    });
+  function submit(){
 
+
+     alert("Your download had get started");
+    
+
+    }
+   
+    function  send(){
+        let name = document.getElementById("inputtext").value;
+        let box = document.getElementById("inputbox").value;
+        if(name==""&&box=="" ){
+           alert("filed must be something ")
+        }
+    
+        else{
+            alert(name+" "+box+" your respose had send to nanigoudpeddagoni");
+        }
+    }
 </script>
 </html>
