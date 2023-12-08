@@ -13,9 +13,10 @@
    nav{
     display:none;
     width:100%;
+    min-height: 100vh;
     padding:4rem 14rem;
     background-color:#1f242d;
-    opacity: .8;
+    opacity: .9;
     text-align: center;
    }
    nav ul li{
@@ -24,10 +25,9 @@
    }
    nav.show{
     display:block;
-    
-    width:400px;
+    left:-3%;
+    width:500px;
     position: absolute;
-    left:2px;
     top:80px;
    }
    .toogle{
@@ -94,23 +94,20 @@ left:25%;
 height:200px;
 width:200px;
 }
-.about-head p{
+.about-head {
   position:absolute;
-  height: 100%;
-  top:20%;
-  right:35%;
-  font-size:1.6rem ;
-  width:90%;
+ top :50%;
+  left:8%;
+  height: 50%;
+  font-size:1rem;
+  width:80%;
+  text-align:center ;
 
 }
 .about-head h2  {
     font-size: 3rem;
-    position : absolute;
-    top : 5%;
-    left:-10%;
 
 }
-
 /* conatiner box wich holds box */
 .container{
     display: flex;
@@ -168,25 +165,24 @@ left:20%;
 }
 form{
     position : absolute;
-    left:1%;
     top:30%;
-    height:600px;
+    height:40%;
+    width:100%;
 }
 input{
-    width:40rem;
-    font-size: 1rem;
-    padding: 2rem;
-    transition: 2s;
+   width:100%;
 }
 textarea{
-    width: 40rem;
-    max-height:50rem ;
+    width:100%;
+   
 }
 input:hover{
     box-shadow: none;
 }
+ footer h1{
+    font-size: 9px;
+ }
 
-}
 /* the section we are using the laptops  */
 @media (min-width:500px)and (max-width:1000px) {
     .about-head p{
